@@ -1,4 +1,3 @@
-
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -223,7 +222,7 @@ function App() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Total Rides</CardTitle>
+                  <CardTitle className="text-sm font-medium">🚴 Total Rides</CardTitle>
                   <span className="text-2xl">🚴</span>
                 </CardHeader>
                 <CardContent>
@@ -233,7 +232,7 @@ function App() {
 
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Total Distance</CardTitle>
+                  <CardTitle className="text-sm font-medium">📏 Total Distance</CardTitle>
                   <span className="text-2xl">📏</span>
                 </CardHeader>
                 <CardContent>
@@ -243,7 +242,7 @@ function App() {
 
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Total Duration</CardTitle>
+                  <CardTitle className="text-sm font-medium">⏱️ Total Duration</CardTitle>
                   <span className="text-2xl">⏱️</span>
                 </CardHeader>
                 <CardContent>
@@ -253,7 +252,7 @@ function App() {
 
               <Card>
                 <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                  <CardTitle className="text-sm font-medium">Avg Distance</CardTitle>
+                  <CardTitle className="text-sm font-medium">📊 Avg Distance</CardTitle>
                   <span className="text-2xl">📊</span>
                 </CardHeader>
                 <CardContent>
@@ -311,13 +310,13 @@ function App() {
                   <Table>
                     <TableHeader>
                       <TableRow>
-                        <TableHead>Date</TableHead>
-                        <TableHead>Type</TableHead>
-                        <TableHead>Route</TableHead>
-                        <TableHead>Distance</TableHead>
-                        <TableHead>Duration</TableHead>
-                        <TableHead>Avg Speed</TableHead>
-                        <TableHead>Route Info</TableHead>
+                        <TableHead>📅 Date</TableHead>
+                        <TableHead>🏷️ Type</TableHead>
+                        <TableHead>🗺️ Route</TableHead>
+                        <TableHead>📏 Distance</TableHead>
+                        <TableHead>⏱️ Duration</TableHead>
+                        <TableHead>⚡ Avg Speed</TableHead>
+                        <TableHead>ℹ️ Route Info</TableHead>
                       </TableRow>
                     </TableHeader>
                     <TableBody>

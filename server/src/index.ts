@@ -39,7 +39,7 @@ const appRouter = router({
   // Get rides with optional filtering
   getRides: publicProcedure
     .input(getRidesInputSchema.optional())
-    .query(({ input }) => getRides(input)),
+    .query(({ input }) => getRides(input || { limit: 100, offset: 0 })),
   
   // Get a specific ride by ID
   getRideById: publicProcedure
@@ -59,7 +59,7 @@ const appRouter = router({
   // Get ride metrics and statistics
   getRideMetrics: publicProcedure
     .input(getMetricsInputSchema.optional())
-    .query(({ input }) => getRideMetrics(input)),
+    .query(({ input }) => getRideMetrics(input || {})),
 });
 
 export type AppRouter = typeof appRouter;
